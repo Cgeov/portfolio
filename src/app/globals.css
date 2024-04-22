@@ -2,32 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: #0f0715;
+    --foreground: #ffffff;
+
+    --card: #ffffff;
+    --card-foreground: #ffffff;
+
+    --popover: #ffffff;
+    --popover-foreground: #ffffff;
+
+    --primary: #dddddd;
+    --primary-foreground: #0f0715;
+
+    --secondary: #d2f6f6;
+    --secondary-foreground: #dada1d;
+
+    --muted: #d2f6f6;
+    --muted-foreground: #d7a52f;
+
+    --accent: #d2f6f6;
+    --accent-foreground: #dada1d;
+
+    --destructive: #ff99ff;
+    --destructive-foreground: #d2f6fa;
+
+    --border: #e0eeec;
+    --input: #e0eeec;
+    --ring: #ffffff;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #ffffff;
+    --foreground: #d2f6fa;
+
+    --card: #ffffff;
+    --card-foreground: #d2f6fa;
+
+    --popover: #ffffff;
+    --popover-foreground: #d2f6fa;
+
+    --primary: #d2f6fa;
+    --primary-foreground: #0f0715;
+
+    --secondary: #daf2f9;
+    --secondary-foreground: #d2f6fa;
+
+    --muted: #daf2f9;
+    --muted-foreground: #d790a6;
+
+    --accent: #daf2f9;
+    --accent-foreground: #d2f6fa;
+
+    --destructive: #ff9cce;
+    --destructive-foreground: #d2f6fa;
+
+    --border: #daf2f9;
+    --input: #daf2f9;
+    --ring: #d5d5d5;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+#heroSection::before {
+  background: linear-gradient(260deg, #8750f7 0%, rgba(115, 67, 210, 0) 100%);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 322px;
+  height: 308px;
+  border-radius: 50%;
+  z-index: -10000;
+  filter: blur(150px);
+  margin-top: -5%;
+}
+
+.bgTitle {
+  background: linear-gradient(to right, #8750f7 0%, white 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
