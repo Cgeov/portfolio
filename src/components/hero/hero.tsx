@@ -6,12 +6,12 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function HeroNav() {
   return (
-    <div className="heroSection relative">
+    <section className="heroSection relative pb-16 panel dark">
       <div
-        className="absolute -top-28 -right-10 w-322 h-308 bg-gradient-to-br from-purple-700 to-transparent rounded-full filter blur-[100px] w-[322px] h-[308px]"
+        className="absolute -top-28 -right-0 w-322 h-308 bg-gradient-to-br from-purple-700 to-transparent rounded-full filter blur-[100px] w-[322px] h-[308px]"
         style={{ zIndex: -1000 }}
       ></div>
-      <div className="grid grid-cols-[2fr_1fr] items-center py-6 px-10">
+      <div className="grid grid-cols-[2fr_1fr] items-center pt-6  pb-2 px-10">
         <div>
           <h1 className="text-3xl font-bold">
             <TypeAnimation
@@ -27,7 +27,7 @@ export default function HeroNav() {
               repeat={Infinity}
             ></TypeAnimation>
             <p>
-              <span className="bgTitle">Web Developer</span>
+              <span className="bgTitle text-6xl">Web Developer</span>
             </p>
           </h1>
           <p>
@@ -53,16 +53,16 @@ export default function HeroNav() {
           src="/profile.png"
         ></img>
       </div>
-      <div>
-        <div>
-          <span>Experiencia</span>
-          <CountUp start={0} end={2}></CountUp>
+      <div className="flex flex-row flex-wrap gap-16 items-center justify-start px-10">
+        <div className="flex items-center gap-3">
+          <CountUp className="text-6xl font-bold" delay={0.5} duration={4} start={0} end={2}></CountUp>
+          <span className="text-sm"> Años de  <br/> Experiencia</span>
         </div>
-        <div>
-          <span>Proyectos</span>
-          <CountUp start={0} end={10}></CountUp>+
+        <div className="flex items-center gap-3">
+          <div className="text-6xl font-bold"><CountUp delay={0.5} duration={8} start={0} end={10}></CountUp>+</div>
+          <span className="text-sm"> Proyectos <br/>Completados</span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
