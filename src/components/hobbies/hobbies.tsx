@@ -1,5 +1,8 @@
-import { CodeXml, Gamepad2, Music, Popcorn } from "lucide-react";
+import { BookText, CodeXml, Gamepad2, Music, Popcorn } from "lucide-react";
 import { useState } from "react";
+import { LiaChessSolid } from "react-icons/lia";
+import { MdOutlineDesignServices } from "react-icons/md";
+import { RiPingPongLine } from "react-icons/ri";
 
 const BlobPattern = ({ gradientId, hovered }: any) => {
   return (
@@ -46,8 +49,24 @@ export default function Hobbies() {
       icon: <CodeXml className="absolute top-9 left-10"></CodeXml>,
     },
     {
-      name: "Juegos",
+      name: "Video Juegos",
       icon: <Gamepad2 className="absolute top-9 left-10"></Gamepad2>,
+    },
+    {
+      name: "Tenis de Mesa",
+      icon: <RiPingPongLine className="absolute top-9 left-10 text-2xl"></RiPingPongLine>,
+    },
+    {
+      name: "Lectura",
+      icon: <BookText className="absolute top-9 left-10"></BookText>,
+    },
+    {
+      name: "Manualidades",
+      icon: <MdOutlineDesignServices className="absolute top-9 left-10 text-2xl"></MdOutlineDesignServices>,
+    },
+    {
+      name: "Juegos de mesa",
+      icon: <LiaChessSolid className="absolute top-9 left-10 text-2xl"></LiaChessSolid>,
     },
   ];
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -62,16 +81,18 @@ export default function Hobbies() {
 
   return (
     <div className="py-16 mx-auto px-[5%] text-center">
-      <h2 className="bgTitle text-6xl ">Mis Hobbies</h2>
-      <p>Un poco de mis gustos :)</p>
+      <h2 className="bgTitle text-6xl font-bold text-center pt-16" data-aos="fade-down">Mis Hobbies</h2>
+      <p>Un poco de mis gustos {":)"}</p>
       <div className="grid mt-6 grid-cols-[1fr] sm:grid-cols-[1fr_1fr] xl:grid-cols-[1fr_1fr_1fr_1fr] gap-6">
         {info.map((activity: any, index: number) => {
           return (
             <div
               key={index}
-              className="relative group flex items-center rounded-md border-2 border-opacity-5 border-gray-400 hover:border-purple-600"
+              className="relative group flex items-center rounded-md border-2 border-opacity-5 border-gray-400 hover:border-purple-600 transition-all duration-500"
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave()}
+              onTouchStart={() => handleMouseEnter(index)}
+              onTouchEnd={() => handleMouseLeave()}
             >
               <div className="relative w-[35%] min-w-32">
                 <BlobPattern
@@ -81,7 +102,7 @@ export default function Hobbies() {
                 {activity.icon}
               </div>
 
-              <p className="group-hover:text-purple-700 text-lg">{activity.name}</p>
+              <p className="group-hover:text-purple-700 text-lg transition-all duration-500">{activity.name}</p>
             </div>
           );
         })}
