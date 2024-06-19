@@ -92,7 +92,6 @@ export default function Hobbies() {
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave()}
               onTouchStart={() => handleMouseEnter(index)}
-              onTouchEnd={() => handleMouseLeave()}
             >
               <div className="relative w-[35%] min-w-32">
                 <BlobPattern
