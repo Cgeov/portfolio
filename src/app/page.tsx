@@ -7,6 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Hobbies from "@/components/hobbies/hobbies";
 import Experience from "@/components/experience/experience";
+import Skills from "@/components/skills/skills";
 
 export default function Home() {
   useEffect(()=>{
@@ -19,6 +20,7 @@ export default function Home() {
       <AboutMe></AboutMe>
       <Hobbies></Hobbies>
       <Experience></Experience>
+      <Skills></Skills>
     </main>
   );
 }
