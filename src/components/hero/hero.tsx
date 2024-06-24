@@ -8,7 +8,7 @@ export default function HeroNav() {
   return (
     <section className="heroSection relative pb-16 panel dark">
       <div
-        className="absolute -top-28 -right-0 w-322 h-308 bg-gradient-to-br from-purple-700 to-transparent rounded-full filter blur-[100px] w-[322px] h-[308px]"
+        className="absolute -top-28 -right-0 w-322 h-308 bg-gradient-to-br from-purple-700 to-transparent rounded-full blur-[100px] w-[322px] h-[308px]"
         style={{ zIndex: -1000 }}
       ></div>
       <div className="grid grid-cols-[2fr_1fr] items-center pt-6  pb-2 px-10">

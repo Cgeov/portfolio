@@ -99,3 +99,11 @@
 scrollbar-width: thin;
 scrollbar-color: #8750f7 #2a1454;
 }
+
+
+
+.bgImageCode{
+  background: url('../../public/patterCode.svg') transparent;
+  background-repeat: repeat;
+  background-size: cover;
+}

@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(0deg, rgba(15,7,21,1) 7%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 44%, rgba(0,0,0,1) 66%, rgba(0,0,0,1) 82%, rgba(15,7,21,1) 94%);',
+        'custom-gradient': 'linear-gradient(0deg, rgba(15,7,21,1) 7%, rgba(0,0,0,0.5) 24%, rgba(0,0,0,0.5) 44%, rgba(0,0,0,0.5) 66%, rgba(0,0,0,0.5) 82%, rgba(15,7,21,1) 94%);',
         'card-gradient': 'linear-gradient(90deg, rgba(135,80,247,1) 39%, rgba(42,20,84,1) 92%)'
       },
       colors: {

@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <div className="py-10 mx-auto px-[5%] text-center">
       <h2
-        className="bgTitle text-6xl font-bold text-center pt-16"
+        className="bgTitle text-6xl font-bold text-center py-16"
         data-aos="fade-down">
         My Skills
       </h2>
@@ -79,7 +79,7 @@ export default function Skills() {
               height={100}
               alt="Tailwind"></Image>
           </div>
-          <p>Tailwind</p>
+          <p>Firebase</p>
         </div>
       </div>
     </div>

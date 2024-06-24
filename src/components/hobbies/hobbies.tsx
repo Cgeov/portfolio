@@ -80,9 +80,12 @@ export default function Hobbies() {
   };
 
   return (
-    <div className="py-16 mx-auto px-[5%] text-center">
-      <h2 className="bgTitle text-6xl font-bold text-center pt-16" data-aos="fade-down">Mis Hobbies</h2>
-      <p>Un poco de mis gustos {":)"}</p>
+    <div className="relative py-16 mx-auto px-[5%] text-center">
+      <div
+        className="absolute top-[50%] left-[50%] w-322 h-308 bg-gradient-to-br from-purple-700 to-transparent rounded-full blur-[100px] w-[322px] h-[308px]"
+        style={{ zIndex: -1000 }}
+      ></div>
+      <h2 className="bgTitle text-6xl font-bold text-center py-10" data-aos="fade-down">Mis Hobbies</h2>
       <div className="grid mt-6 grid-cols-[1fr] sm:grid-cols-[1fr_1fr] xl:grid-cols-[1fr_1fr_1fr_1fr] gap-6">
         {info.map((activity: any, index: number) => {
           return (

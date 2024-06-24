@@ -9,6 +9,7 @@ import Hobbies from "@/components/hobbies/hobbies";
 import Experience from "@/components/experience/experience";
 import Skills from "@/components/skills/skills";
 import Projects from "@/components/projects/projects";
+import Knowlegde from "@/components/knowledge/knowledge";
 
 export default function Home() {
   useEffect(()=>{
@@ -23,6 +24,7 @@ export default function Home() {
       <Experience></Experience>
       <Skills></Skills>
       <Projects></Projects>
+      <Knowlegde></Knowlegde>
     </main>
   );
 }
