@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <div className="bg-black">
+    <div className="bg-custom-gradient py-10">
       <h2 className="bgTitle text-6xl font-bold text-center pt-16" data-aos="fade-down">Sobre Mi</h2>
       <div className="grid grid-cols-[2fr_3fr] items-center pb-2 px-10">
         <div>

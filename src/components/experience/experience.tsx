@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Experience() {
   return (
-    <div className="py-16 px-[5%]">
+    <div className="bg-custom-gradient pt-36 pb-44 px-[5%]">
       <h2
         className="bgTitle text-6xl font-bold text-center pt-16"
         data-aos="fade-down">
