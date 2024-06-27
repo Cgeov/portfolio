@@ -2,7 +2,7 @@ import ProjectCard from "./projectCard";
 
 export default function Projects() {
   return (
-    <div className="pb-16">
+    <div className="">
       <h2
         className="bgTitle text-6xl font-bold text-center py-10"
         data-aos="fade-down">

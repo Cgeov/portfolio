@@ -10,6 +10,7 @@ import Experience from "@/components/experience/experience";
 import Skills from "@/components/skills/skills";
 import Projects from "@/components/projects/projects";
 import Knowlegde from "@/components/knowledge/knowledge";
+import Services from "@/components/services/services";
 
 export default function Home() {
   useEffect(()=>{
@@ -25,6 +26,7 @@ export default function Home() {
       <Skills></Skills>
       <Projects></Projects>
       <Knowlegde></Knowlegde>
+      <Services></Services>
     </main>
   );
 }
