@@ -38,9 +38,6 @@ export default function Services() {
       </div>
       <div>
         <Swiper
-          style={{
-            "--swiper-navigation-size": "15px",
-          }}
           modules={[Controller, EffectFade, Navigation, Pagination]}
           onSwiper={(e: any) => setSecondSwiper(e)}
           controller={{ control: firstSwiper }}
