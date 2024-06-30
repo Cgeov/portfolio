@@ -80,9 +80,9 @@ export default function Hobbies() {
   };
 
   return (
-    <div className="relative py-16 mx-auto px-[5%] text-center">
+    <div className="relative md:py-16 mx-auto px-[5%] text-center">
       <div
-        className="absolute top-[50%] left-[50%] w-322 h-308 bg-gradient-to-br from-purple-700 to-transparent rounded-full blur-[100px] w-[322px] h-[308px]"
+        className="overflow-hidden absolute top-[50%] left-[calc(50%_-_161px)] bg-gradient-to-br from-purple-700 to-transparent rounded-full blur-[100px] w-[322px] h-[308px]"
         style={{ zIndex: -1000 }}
       ></div>
       <h2 className="bgTitle text-6xl font-bold text-center py-10" data-aos="fade-down">Mis Hobbies</h2>

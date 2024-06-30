@@ -1,8 +1,8 @@
 export default function AboutMe() {
   return (
-    <div className="bg-custom-gradient py-10">
+    <div className="bg-custom-gradient pt-10 md:py-10">
       <h2 className="bgTitle text-6xl font-bold text-center pt-28" data-aos="fade-down">Sobre Mi</h2>
-      <div className="grid grid-cols-[2fr_3fr] items-center pb-10 px-10">
+      <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] items-center pb-10 px-10">
         <div>
           <img
             className="transition ease-in-out delay-150 hover:-translate-y-1 hover:rotate-6 duration-300"

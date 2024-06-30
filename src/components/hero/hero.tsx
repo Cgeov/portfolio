@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function HeroNav() {
   return (
-    <section className="heroSection relative pb-16 panel dark">
+    <section className="heroSection relative pb-4 md:pb-16 panel dark grid grid-cols-1 md:grid-cols-2">
       <div
         className="absolute -top-28 -right-0 w-322 h-308 bg-gradient-to-br from-purple-700 to-transparent rounded-full blur-[100px] w-[322px] h-[308px]"
         style={{ zIndex: -1000 }}
@@ -30,13 +30,11 @@ export default function HeroNav() {
               <span className="bgTitle text-6xl">Web Developer</span>
             </p>
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          <p className="my-4">
+            Descubre mi trabajo en programación y desarrollo web. Construyendo
+            soluciones digitales desde la imaginación hasta la realidad..
           </p>
-          <div className="flex flex-row gap-6 mt-6 items-center [&>div]:border-purple-700 [&>div]:border-[1px] [&>div]:rounded-3xl [&>div]:transition [&>div]:duration-300 ">
+          <div className="flex flex-row gap-6 mt-6 touch- items-center [&>div]:border-purple-700 [&>div]:border-[1px] [&>div]:rounded-3xl [&>div]:transition [&>div]:duration-300 ">
             <div className="px-6 py-3 hover:bg-purple-700 hover:cursor-pointer">
               Descargar CV
             </div>
@@ -49,18 +47,33 @@ export default function HeroNav() {
           </div>
         </div>
         <img
-          className="transition ease-in-out delay-150 hover:-translate-y-1 hover:rotate-6 duration-300"
+          className="transition ease-in-out delay-150 hover:-translate-y-1 hover:rotate-6 duration-300 hidden md:block"
           src="/profile.png"
         ></img>
       </div>
-      <div className="flex flex-row flex-wrap gap-16 items-center justify-start px-10">
+      <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-3 items-center justify-start px-10">
         <div className="flex items-center gap-3">
-          <CountUp className="text-6xl font-bold" delay={0.5} duration={4} start={0} end={2}></CountUp>
-          <span className="text-sm"> Años de  <br/> Experiencia</span>
+          <CountUp
+            className="text-6xl font-bold"
+            delay={0.5}
+            duration={4}
+            start={0}
+            end={2}
+          ></CountUp>
+          <span className="text-sm">
+            {" "}
+            Años de <br /> Experiencia
+          </span>
         </div>
         <div className="flex items-center gap-3">
-          <div className="text-6xl font-bold"><CountUp delay={0.5} duration={8} start={0} end={10}></CountUp>+</div>
-          <span className="text-sm"> Proyectos <br/>Completados</span>
+          <div className="text-6xl font-bold">
+            <CountUp delay={0.5} duration={8} start={0} end={10}></CountUp>+
+          </div>
+          <span className="text-sm">
+            {" "}
+            Proyectos <br />
+            Completados
+          </span>
         </div>
       </div>
     </section>
