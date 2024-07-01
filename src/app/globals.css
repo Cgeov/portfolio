@@ -144,3 +144,6 @@ section > div {
   position: relative;
   overflow: hidden;
 } */
+.swiper-slide:not(.swiper-slide-active){
+  opacity: 0 !important;
+}

@@ -35,7 +35,7 @@ export default function Services() {
           ></Image>
           <Swiper
           style={{position: 'absolute'}}
-            className="absolute top-[calc(50%_-_150px)]"
+            className="absolute w-full top-[calc(50%_-_150px)]"
             modules={[Controller]}
             onSwiper={(e: any) => setFirstSwiper(e)}
             controller={{ control: secondSwiper }}
