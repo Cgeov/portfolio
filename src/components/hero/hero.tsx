@@ -36,14 +36,14 @@ export default function HeroNav() {
             soluciones digitales desde la imaginación hasta la realidad..
           </p>
           <div className="flex flex-row gap-6 mt-6 touch- items-center [&>div]:border-purple-700 [&>div]:border-[1px] [&>div]:rounded-3xl [&>div]:transition [&>div]:duration-300 ">
-            <div className="px-6 py-3 hover:bg-purple-700 hover:cursor-pointer">
-              Descargar CV
+           <div className="px-6 py-3 hover:bg-purple-700 hover:cursor-pointer">
+              <a href="/cv.pdf" download>Descargar CV</a>
             </div>
             <div className="p-3 hover:bg-purple-700 hover:cursor-pointer">
-              <FaLinkedinIn size={20}></FaLinkedinIn>
+             <a href="https://linkedin.com/in/cgeov"><FaLinkedinIn size={20}></FaLinkedinIn></a>
             </div>
             <div className="p-3 hover:bg-purple-700 hover:cursor-pointer">
-              <PiGithubLogoFill size={20}></PiGithubLogoFill>
+              <a href="https://github.com/Cgeov"><PiGithubLogoFill size={20}></PiGithubLogoFill></a>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ export default function HeroNav() {
           src="/profile.png"
         ></img>
       </div>
-      <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-3 items-center justify-start px-10">
+      <div className="mt-2 sm:w-fit grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-5 items-center justify-start px-10">
         <div className="flex items-center gap-3">
           <CountUp
             className="text-6xl font-bold"
