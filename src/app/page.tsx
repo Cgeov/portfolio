@@ -60,6 +60,7 @@ export default function Home() {
           <AboutMe></AboutMe>
         </motion.div>
       </section>
+      
       <section>
         <motion.div
           initial={false}
@@ -67,7 +68,7 @@ export default function Home() {
           viewport={{ once: true }}
           onViewportEnter={() => setIsInView(true)}
         >
-          <Hobbies></Hobbies>
+          <Services></Services>
         </motion.div>
       </section>
       <section>
@@ -80,10 +81,16 @@ export default function Home() {
           <Experience></Experience>
         </motion.div>
       </section>
-
-
-
-
+      <section>
+        <motion.div
+          initial={false}
+          transition={{ duration: 1, delay: 1 }}
+          viewport={{ once: true }}
+          onViewportEnter={() => setIsInView(true)}
+        >
+          <Hobbies></Hobbies>
+        </motion.div>
+      </section>
 
       <section>
         <motion.div
@@ -96,16 +103,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      <section>
-        <motion.div
-          initial={false}
-          transition={{ duration: 1, delay: 1 }}
-          viewport={{ once: true }}
-          onViewportEnter={() => setIsInView(true)}
-        >
-          <Projects></Projects>
-        </motion.div>
-      </section>
+      
 
       <section>
         <motion.div
@@ -117,7 +115,6 @@ export default function Home() {
           <Knowlegde></Knowlegde>
         </motion.div>
       </section>
-
       <section>
         <motion.div
           initial={false}
@@ -125,9 +122,10 @@ export default function Home() {
           viewport={{ once: true }}
           onViewportEnter={() => setIsInView(true)}
         >
-          <Services></Services>
+          <Projects></Projects>
         </motion.div>
       </section>
+      
     </main>
   );
 }

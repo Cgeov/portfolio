@@ -2,12 +2,22 @@ import ProjectCard from "./projectCard";
 
 export default function Projects() {
   return (
-    <div className="">
-      <h2
-        className="bgTitle text-6xl font-bold text-center py-10"
-        data-aos="fade-down">
-        Proyectos
-      </h2>
+    <div>
+      <div className="relative">
+        <h2
+          className="bgTitle text-6xl font-bold text-center py-10"
+          data-aos="fade-down"
+        >
+          Servicios
+        </h2>
+        <h2
+          className="titleSecond text-6xl font-bold text-center py-10"
+          data-aos="fade-down"
+        >
+          Servicios
+        </h2>
+      </div>
+
       {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center pb-2 px-10">
         <ProjectCard></ProjectCard>
         <ProjectCard></ProjectCard>

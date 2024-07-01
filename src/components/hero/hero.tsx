@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function HeroNav() {
   return (
-    <section className="heroSection relative pb-4 md:pb-16 panel dark grid grid-cols-1 md:grid-cols-2">
+    <section className="heroSection relative pb-4 md:pb-16 panel dark grid grid-cols-1">
       <div
         className="absolute -top-28 -right-0 w-322 h-308 bg-gradient-to-br from-purple-700 to-transparent rounded-full blur-[100px] w-[322px] h-[308px]"
         style={{ zIndex: -1000 }}
@@ -15,6 +15,7 @@ export default function HeroNav() {
         <div>
           <h1 className="text-3xl font-bold">
             <TypeAnimation
+            className="h-20 block"
               sequence={[
                 "Hola!",
                 2000,

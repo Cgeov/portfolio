@@ -54,7 +54,9 @@ export default function Hobbies() {
     },
     {
       name: "Tenis de Mesa",
-      icon: <RiPingPongLine className="absolute top-9 left-10 text-2xl"></RiPingPongLine>,
+      icon: (
+        <RiPingPongLine className="absolute top-9 left-10 text-2xl"></RiPingPongLine>
+      ),
     },
     {
       name: "Lectura",
@@ -62,11 +64,15 @@ export default function Hobbies() {
     },
     {
       name: "Manualidades",
-      icon: <MdOutlineDesignServices className="absolute top-9 left-10 text-2xl"></MdOutlineDesignServices>,
+      icon: (
+        <MdOutlineDesignServices className="absolute top-9 left-10 text-2xl"></MdOutlineDesignServices>
+      ),
     },
     {
       name: "Juegos de mesa",
-      icon: <LiaChessSolid className="absolute top-9 left-10 text-2xl"></LiaChessSolid>,
+      icon: (
+        <LiaChessSolid className="absolute top-9 left-10 text-2xl"></LiaChessSolid>
+      ),
     },
   ];
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -80,12 +86,26 @@ export default function Hobbies() {
   };
 
   return (
-    <div className="relative md:py-16 mx-auto px-[5%] text-center">
+    <div className="relative md:py-10 mx-auto px-[5%] text-center">
       <div
         className="overflow-hidden absolute top-[50%] left-[calc(50%_-_161px)] bg-gradient-to-br from-purple-700 to-transparent rounded-full blur-[100px] w-[322px] h-[308px]"
         style={{ zIndex: -1000 }}
       ></div>
-      <h2 className="bgTitle text-6xl font-bold text-center py-10" data-aos="fade-down">Mis Hobbies</h2>
+      <div className="relative">
+        <h2
+          className="bgTitle text-6xl font-bold text-center py-10"
+          data-aos="fade-down"
+        >
+          Mis Hobbies
+        </h2>
+        <h2
+          className="titleSecond text-6xl font-bold text-center py-10"
+          data-aos="fade-down"
+        >
+          Mis Hobbies
+        </h2>
+      </div>
+
       <div className="grid mt-6 grid-cols-[1fr] sm:grid-cols-[1fr_1fr] xl:grid-cols-[1fr_1fr_1fr_1fr] gap-6">
         {info.map((activity: any, index: number) => {
           return (
@@ -98,13 +118,15 @@ export default function Hobbies() {
             >
               <div className="relative w-[35%] min-w-32">
                 <BlobPattern
-                  gradientId={"hover-"+index}
+                  gradientId={"hover-" + index}
                   hovered={hoveredIndex === index}
                 />
                 {activity.icon}
               </div>
 
-              <p className="group-hover:text-purple-700 text-lg transition-all duration-500">{activity.name}</p>
+              <p className="group-hover:text-purple-700 text-lg transition-all duration-500">
+                {activity.name}
+              </p>
             </div>
           );
         })}

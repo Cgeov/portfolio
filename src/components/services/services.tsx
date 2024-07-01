@@ -10,7 +10,21 @@ export default function Services() {
   const [firstSwiper, setFirstSwiper] = useState(null);
   const [secondSwiper, setSecondSwiper] = useState(null);
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+      <div className="relative">
+        <h2
+          className="bgTitle text-6xl font-bold text-center py-10"
+          data-aos="fade-down"
+        >
+          Proyectos
+        </h2>
+        <h2
+          className="titleSecond text-6xl font-bold text-center py-10"
+          data-aos="fade-down"
+        >
+          Proyectos
+        </h2>
+      </div>
       <div className="relative">
         <Image className="absolute -z-50" src="/blob/blob.svg" width={800} height={500} alt="Blob"></Image>
         <Swiper
@@ -66,6 +80,6 @@ export default function Services() {
           </SwiperSlide>
         </Swiper>
       </div>
-    </section>
+    </div>
   );
 }

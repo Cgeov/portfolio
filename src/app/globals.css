@@ -95,6 +95,16 @@
   -webkit-text-fill-color: transparent;
 }
 
+.titleSecond{
+  position: absolute;
+  width: 100%;
+  top: -5px;
+  left: 5px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
 *{
 scrollbar-width: thin;
 scrollbar-color: #8750f7 #2a1454;
