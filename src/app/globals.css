@@ -13,10 +13,10 @@
     --popover: #ffffff;
     --popover-foreground: #ffffff;
 
-    --primary: #dddddd;
+    --primary: #2a1454;
     --primary-foreground: #0f0715;
 
-    --secondary: #d2f6f6;
+    --secondary: #8750f7;
     --secondary-foreground: #dada1d;
 
     --muted: #d2f6f6;
@@ -97,7 +97,7 @@
 
 .titleSecond{
   position: absolute;
-  width: 100%;
+  width: calc(100% - 6px);
   top: -5px;
   left: 5px;
   color: transparent;

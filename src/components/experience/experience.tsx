@@ -30,8 +30,8 @@ export default function Experience() {
             height={150}
             alt="Premier Distributions"
           />
-          <div className="sm:absolute bottom-7 left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-28 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
-            Marzo 2023
+          <div className="sm:absolute top-[140px] left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-max p-2 h-6 mb-3 sm:mb-0 text-primary bg-white bg-opacity-70 rounded-full">
+            03/2023 - Act.
           </div>
           <div className="text-xl font-bold">Premier Distributions</div>
         </div>
@@ -55,13 +55,13 @@ export default function Experience() {
         </div>
         <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:border-l-[1px] before:border-dashed before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px  sm:before:ml-[10rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-[1px] after:border-spacing-2 after:border-dashed after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[10rem] after:-translate-x-1/2 after:translate-y-1.5">
           <Image
-            className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-36 h-16 mb-3 sm:mb-0 text-emerald-600rounded-full"
+            className="sm:absolute object-contain left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-36 h-16 mb-3 sm:mb-0 text-emerald-600rounded-full"
             src={"/logo2.svg"}
             width={150}
             height={150}
             alt="Premier Distributions"
           />
-          <div className="sm:absolute bottom-7 left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-28 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
+          <div className="sm:absolute top-[140px] left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-max p-2 h-6 mb-3 sm:mb-0 text-primary bg-white bg-opacity-70 rounded-full">
             09/2022 – 01/2023
           </div>
           <div className="text-xl font-bold">OrbitWeb.inc</div>
@@ -89,7 +89,7 @@ export default function Experience() {
             height={150}
             alt="Premier Distributions"
           />
-          <div className="sm:absolute bottom-7 left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-28 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
+          <div className="sm:absolute top-[140px] left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-max p-2 h-6 mb-3 sm:mb-0 text-primary bg-white bg-opacity-70 rounded-full">
             02/2022 - 06/2022
           </div>
           <div className="text-xl font-bold">Fundación Manos Mágicas</div>
