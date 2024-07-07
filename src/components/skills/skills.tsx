@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <div className="py-10 mx-auto px-[5%] text-center">
+    <div className="py-10 mx-auto px-[5%] text-center xl:mx-auto max-w-[1400px]">
       <div className="relative">
       <h2
         className="bgTitle text-6xl font-bold text-center py-16"

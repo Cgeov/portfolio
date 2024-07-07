@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function HeroNav() {
   return (
-    <section className="heroSection relative pb-4 md:pb-16 panel dark grid grid-cols-1">
+    <section className="heroSection relative pb-4 md:pb-16 panel dark grid grid-cols-1 xl:mx-auto max-w-[1400px]">
       <div
         className="absolute -top-28 -right-0 w-322 h-308 bg-gradient-to-br from-purple-700 to-transparent rounded-full blur-[100px] w-[322px] h-[308px]"
         style={{ zIndex: -1000 }}

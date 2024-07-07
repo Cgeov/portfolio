@@ -147,3 +147,26 @@ section > div {
 .swiper-slide:not(.swiper-slide-active){
   opacity: 0 !important;
 }
+
+/* .swiper-button-next,
+.swiper-button-prev {
+  padding: 8px;
+  width: 12px;
+  height: 12px;
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 50%;
+} */
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fff;
+  font-size: 12px;
+}
+
+.bg-custom-gradient{
+  background: url('../../public/blob/wave.svg') transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}

@@ -2,7 +2,8 @@ import Image from "next/image";
 
 export default function Experience() {
   return (
-    <div className="bg-custom-gradient pt-10 md:pt-36 md:pb-44 px-[5%]">
+    <div className="bg-custom-gradient pt-10 md:pt-16 md:pb-44 px-[5%]">
+      <div className="xl:mx-auto max-w-[1400px]">
       <div className="relative">
         <h2
           className="bgTitle text-5xl sm:text-6xl font-bold text-center py-10"
@@ -104,6 +105,8 @@ export default function Experience() {
           de manera inclusiva y efectiva.
         </div>
       </div>
+      </div>
+
     </div>
   );
 }

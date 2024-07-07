@@ -86,11 +86,11 @@ export default function Hobbies() {
   };
 
   return (
-    <div className="relative md:py-10 mx-auto px-[5%] text-center">
-      <div
+    <div className="relative md:py-10 mx-auto px-[5%] text-center xl:mx-auto max-w-[1400px]">
+      {/* <div
         className="overflow-hidden absolute top-[50%] left-[calc(50%_-_161px)] bg-gradient-to-br from-purple-700 to-transparent rounded-full blur-[100px] w-[322px] h-[308px]"
         style={{ zIndex: -1000 }}
-      ></div>
+      ></div> */}
       <div className="relative">
         <h2
           className="bgTitle text-6xl font-bold text-center py-10"
@@ -116,7 +116,7 @@ export default function Hobbies() {
               onMouseLeave={() => handleMouseLeave()}
               onTouchStart={() => handleMouseEnter(index)}
             >
-              <div className="relative w-[35%] min-w-32">
+              <div className="relative w-[35%] min-w-32 transition-all duration-1000 delay-200">
                 <BlobPattern
                   gradientId={"hover-" + index}
                   hovered={hoveredIndex === index}

@@ -10,22 +10,22 @@ export default function Services() {
   const [firstSwiper, setFirstSwiper] = useState(null);
   const [secondSwiper, setSecondSwiper] = useState(null);
   return (
-    <div>
+    <div className="xl:mx-auto max-w-[1400px]">
       <div className="relative">
         <h2
-          className="bgTitle text-6xl font-bold text-center py-10"
+          className="bgTitle text-6xl font-bold text-center pb-10"
           data-aos="fade-down"
         >
           Proyectos
         </h2>
         <h2
-          className="titleSecond text-6xl font-bold text-center py-10"
+          className="titleSecond text-6xl font-bold text-center pb-10"
           data-aos="fade-down"
         >
           Proyectos
         </h2>
       </div>
-      <div className="relative grid grid-cols-1 items-center md:grid-cols-2 bg-primary w-[95%] mx-auto py-20 px-10 rounded-[40px]">
+      <div className="relative grid grid-cols-1 items-center md:grid-cols-2 bg-primary  w-[85%] mx-auto py-20 px-10 rounded-[40px] mb-10">
         <div>
           {/* <Image
             src="/blob/blob.svg"
@@ -35,7 +35,7 @@ export default function Services() {
             className="absolute z-50"
           ></Image> */}
           <Swiper
-            className="sm:-left-16 absolute w-full top-[calc(50%_-_200px)]"
+            className="sm:-left-24 absolute w-full top-[calc(50%_-_200px)]"
             modules={[Controller]}
             onSwiper={(e: any) => setFirstSwiper(e)}
             controller={{ control: secondSwiper }}
