@@ -116,6 +116,7 @@ export default function Hobbies() {
               onMouseLeave={() => handleMouseLeave()}
               onTouchStart={() => handleMouseEnter(index)}
             >
+              <div className="group-hover:absolute group-hover:bg-gradient-to-br group-hover:from-purple-700 group-hover:to-transparent group-hover:rounded-full group-hover:blur-[100px] group-hover:w-[200px] group-hover:h-[200px]"></div>
               <div className="relative w-[35%] min-w-32 transition-all duration-1000 delay-200">
                 <BlobPattern
                   gradientId={"hover-" + index}

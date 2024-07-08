@@ -26,7 +26,7 @@ export default function Services() {
         </h2>
       </div>
       <div className="relative grid grid-cols-1 items-center md:flex bg-primary w-[85%] mx-auto py-20 md:pr-5 rounded-[40px] mb-10">
-        <div className="w-[90%] md:w-[40%]">
+        <div className="w-[100%] md:w-[40%]">
           {/* <Image
             src="/blob/blob.svg"
             width={800}
