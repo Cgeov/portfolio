@@ -52,7 +52,7 @@ export default function HeroNav() {
           src="/profile.png"
         ></img>
       </div>
-      <div className="mt-2 sm:w-fit grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-5 items-center justify-start px-10">
+      <div className="mt-2 sm:w-fit grid grid-cols-1 sm:grid-cols-2 gap-y-5 items-center justify-start px-10">
         <div className="flex items-center gap-3">
           <CountUp
             className="text-6xl font-bold"
