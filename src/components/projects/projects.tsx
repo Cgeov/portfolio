@@ -6,16 +6,81 @@ export default function Projects() {
       <div className="relative">
         <h2
           className="bgTitle text-6xl font-bold text-center py-10"
-          data-aos="fade-down"
-        >
+          data-aos="fade-down">
           Servicios
         </h2>
         <h2
           className="titleSecond text-6xl font-bold text-center py-10"
-          data-aos="fade-down"
-        >
+          data-aos="fade-down">
           Servicios
         </h2>
+      </div>
+
+      <div className="flex flex-row justify-center pb-10 flex-wrap">
+        <div className="card">
+          <img src="/iconGrid.svg" />
+          <div className="card-content">
+            <h2>Card Heading</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              exercitationem iste, voluptatum, quia explicabo laboriosam rem
+              adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa
+              asperiores harum? Dicta odio aut hic.
+            </p>
+            <a href="#" className="button">
+              Find out more
+              <span className="material-symbols-outlined">arrow_right_alt</span>
+            </a>
+          </div>
+        </div>
+        <div className="card">
+          <img src="/iconGrid.svg" />
+          <div className="card-content">
+            <h2>Card Heading</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              exercitationem iste, voluptatum, quia explicabo laboriosam rem
+              adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa
+              asperiores harum? Dicta odio aut hic.
+            </p>
+            <a href="#" className="button">
+              Find out more
+              <span className="material-symbols-outlined">arrow_right_alt</span>
+            </a>
+          </div>
+        </div>
+        <div className="card">
+          <img src="/iconGrid.svg" />
+          <div className="card-content">
+            <h2>Card Heading</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              exercitationem iste, voluptatum, quia explicabo laboriosam rem
+              adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa
+              asperiores harum? Dicta odio aut hic.
+            </p>
+            <a href="#" className="button">
+              Find out more
+              <span className="material-symbols-outlined">arrow_right_alt</span>
+            </a>
+          </div>
+        </div>
+        <div className="card">
+          <img src="/iconGrid.svg" />
+          <div className="card-content">
+            <h2>Card Heading</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              exercitationem iste, voluptatum, quia explicabo laboriosam rem
+              adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa
+              asperiores harum? Dicta odio aut hic.
+            </p>
+            <a href="#" className="button">
+              Find out more
+              <span className="material-symbols-outlined">arrow_right_alt</span>
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center pb-2 px-10">
@@ -25,7 +90,7 @@ export default function Projects() {
         <ProjectCard></ProjectCard>
       </div> */}
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div className="grid gap-4">
           <div className="group relative h-72">
             <img
@@ -119,7 +184,7 @@ export default function Projects() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
